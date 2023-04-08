@@ -1,5 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import { Login } from "../features/login";
+import { Home } from "../features/home";
 import { useAuthentication } from "../features/login/context/AuthenticationContext";
 
 export const AppRoutes = () => {
@@ -11,7 +12,7 @@ export const AppRoutes = () => {
         children: [ 
             {
                 path: '/',
-                element: <h1>Home</h1>
+                element: <Home />
             },
         ]
     } : { 
